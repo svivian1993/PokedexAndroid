@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.PokemonInformationActivity">
+
+    <TextView
+        android:id="@+id/tvPokemonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pokemon Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonName" />
+
+    <TextView
+        android:id="@+id/tvPokemonBaseExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Base Experience: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPokemon" />
+
+    <TextView
+        android:id="@+id/tvPokemonBaseExperienceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Value"
+        app:layout_constraintStart_toEndOf="@+id/tvPokemonBaseExperience"
+        app:layout_constraintTop_toBottomOf="@+id/ivPokemon" />
+
+    <TextView
+        android:id="@+id/tvPokemonWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Weight: "
+        app:layout_constraintStart_toStartOf="@+id/tvPokemonBaseExperience"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonBaseExperience" />
+
+    <TextView
+        android:id="@+id/tvPokemonWeightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Value"
+        app:layout_constraintStart_toEndOf="@+id/tvPokemonWeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonBaseExperience" />
+
+    <TextView
+        android:id="@+id/tvPokemonHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Height: "
+        app:layout_constraintStart_toStartOf="@+id/tvPokemonBaseExperience"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonWeight" />
+
+    <TextView
+        android:id="@+id/tvPokemonHeightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Value"
+        app:layout_constraintStart_toEndOf="@+id/tvPokemonHeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonWeight" />
+</androidx.constraintlayout.widget.ConstraintLayout>
